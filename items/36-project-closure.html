@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Project Closure — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Project Closure</h1>
+          <div class="small">Item 36</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">Below is the current structure of the Project Closure Folder and what needs to be saved in each folder as a minimum.
+1. Head Contract Financials
+This folder must include the Financial Report in both PDF and Excel.
+The financial report must cover:
+a)	Tender margin
+b)	Letting gain margin
+c)	Final margin
+d)	Revised contract value
+e)	List of approved variations
+f)	List of rejected variations
+g)	List of internal variations
+h)	Confirmation that the entire contract value has been claimed
+i)	Confirmation that all approved variations have been claimed (and noted if any are pending for a specific reason)
+2. Head Contract Unapproved Variations
+a)	Extract each individual unapproved variation from Procore and save a PDF copy in this folder.
+b)	Extract the list of unapproved variations from Procore and save a PDF copy of the list in this folder.
+
+3. Post Handover Checklist
+a)	Extract the Post Handover Checklist from Procore and save the PDF in this folder.
+b)	The checklist must show that all items below are closed and include evidence where possible (e.g., attach the relevant document, or note where it sits inside the O&M/Handover pack):
+c)	Items to be closed (with evidence/notes):
+d)	OUTSTANDING WORKS
+e)	OUTSTANDING FURNITURE
+f)	OUTSTANDING DEFECTS
+g)	ADDITIONAL WORKS REQUESTED BY CLIENT
+h)	OUTSTANDING DOCUMENTS
+i)	Occupation Certificate
+j)	O&Ms, Warranties, As-Builts
+k)	Training Billi (tenant to enter into maintenance agreement directly with Billi)
+l)	Training Mechanical (incl. Supp Units)
+m)	Training Electrical
+n)	Training AV (provide quick reference guides to be printed, laminated and left on the boardroom table)
+o)	Training Security
+p)	Client issued PC Certificate
+
+4. Client Handover Package
+Once the client handover package is ready:
+a)	Send it via Procore Correspondence and attach it as a ZIP file.
+b)	Minimum contents of the ZIP file:
+1.	Glazing certificate
+2.	Joinery care and maintenance
+3.	Mech certs and as-built
+4.	Elect certs and as-built
+5.	Fire certs and as-built
+6.	Hydraulics certs and as-built
+7.	Paint care and maintenance
+8.	Flooring cert and maintenance
+9.	Tile care and waterproofing certs
+10.	Fixture/appliance warranties
+11.	Film/sign care and maintenance
+12.	Operable wall care/warranty
+13.	CDC approval and OC
+14.	Architectural drawings
+15.	Practical completion certificate
+16.	AV
+17.	Furniture
+Then:
+c)	Save a PDF copy of the Procore correspondence in this folder.
+d)	Copy the ZIP handover pack itself into this folder as well.
+
+5. CDC & OC
+a)	Save copies of CDC, CC, Building Permit and OC (or CFI) in this folder.</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>1a
+1b
+1c
+1d
+1e
+1f
+1g
+1h
+1i
+
+2a
+2b
+
+3a
+3b
+3c
+3d
+3e
+3f
+3g
+3h
+3i
+.
+.
+3o
+
+4a</td></tr>
+<tr><th>SM</th><td class='rolecell '></td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>4 
+all items below from 1 to 17</td></tr>
+<tr><th>HOC</th><td class='rolecell '></td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/35-monthly-report.html">← Previous</a>
+      <a class="btn" href="../items/37-defect-inspection-and-defect-management.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

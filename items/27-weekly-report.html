@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Weekly report — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Weekly report</h1>
+          <div class="small">Item 27</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">A-The weekly report consists of the following sections that must be combined at the end in PDF format and distributed to the client via the correspondence tool/weekly report section
+1.	PowerPoint:
+PowerPoint Template must be updated with the following information:
+a)	Front page and all footers must reflect the correct site address, client logo 
+b)	The site layout should show the entire site and critical locations like the site office, lunch room, storage etc.
+c)  Weekly update PM on Thursday 
+d)	Risk summary
+
+2.	Program:
+a)	MPP file of program must be uploaded to Procore
+b)	Program must be updated to reflect the progress on each line item using Procore Drive and a copy of MPP file must be saved on server in the tracking folder of program and a pdf copy into the associated week folder
+
+3.	Photos:
+a)	Selected photos must be extracted from Procore(4 per page)
+
+4.	Procurement Schedule:
+a)	Must be updated to reflect the correct delivery date and status so items/highlighting anything has delay etc
+
+5.	RFIs
+a)	RFIs that client and engineers are involved must be extracted from Procore as a list 
+
+6.	Budget Tracker:
+a)	-A copy of the head contract summary in PDF BETA
+b)	-A copy of Head contract progress claims showing time of claim and time of payment via 360 reporting</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>A
+1d
+2a
+2b</td></tr>
+<tr><th>SM</th><td class='rolecell on'>1c</td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>1a
+1b
+3a
+4a
+5a
+6a
+6b</td></tr>
+<tr><th>HOC</th><td class='rolecell '></td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/26-document-upload.html">← Previous</a>
+      <a class="btn" href="../items/28-meeting-minutes.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

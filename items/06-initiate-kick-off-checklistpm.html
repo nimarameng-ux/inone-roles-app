@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Initiate Kick Off Checklist(PM) — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Initiate Kick Off Checklist(PM)</h1>
+          <div class="small">Item 6</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">1)	✅Estimating Handover
+a)	Project created in Procore
+b)	Design and tender coordination confirmed
+c)	Document list locked by tendering team
+d)	Project risks identified
+e)	Handover documents prepared and issued
+
+2)	✅Design Handover
+a)	Design and SOP alignment confirmed
+b)	CDC package completed and approved
+c)	Services designs completed
+d)	Designs and FF&E signed “For Construction”
+e)	Drawings and FF&E uploaded to Procore
+
+3)	✅CDC / Building Permit Process
+
+a)	PCA / Building Surveyor appointed
+b)	Access consultant appointed (if required)
+c)	Fire engineer appointed (if required)
+d)	CDC / Building Permit logged and issued
+
+4)	✅Procurement
+a)	Procurement schedule prepared
+b)	Trade comparison completed
+c)	Long-lead items ordered
+d)	Contractors engaged
+e)	Furniture, plants, and styling items ordered (if applicable)
+
+5)	✅WHSE
+a)	Project Management Plan created
+c)	Risk management plan created
+
+6)	✅Pre-Commencement & Site Setup
+a)	Building inspection and inductions completed
+b)	Dilapidation report completed
+c)	Construction program developed</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>1a
+1b
+1c
+1d
+1e
+
+2a
+2b
+2c
+2d
+2e
+
+3a
+3b
+3c
+3d
+
+5a
+5b
+
+6a
+6b
+6c</td></tr>
+<tr><th>SM</th><td class='rolecell '></td></tr>
+<tr><th>OM</th><td class='rolecell on'>5a
+5b
+
+6a
+6b
+6c</td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>4a
+4b
+4c
+4d
+4e</td></tr>
+<tr><th>HOC</th><td class='rolecell on'>5a
+5b
+
+6a
+6b
+6c</td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/05-initiate-sales-checklist.html">← Previous</a>
+      <a class="btn" href="../items/07-initiate-kick-off-checklistsm.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

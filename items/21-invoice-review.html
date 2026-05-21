@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Invoice review — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Invoice review</h1>
+          <div class="small">Item 21</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">The invoice must be updated by the few suppliers and contractors. The following groups are excluded from this process, so accounts will be uploading invoices on their behalf:
+
+a.	Certifiers and Building Surveyors
+b.	Most of the furniture suppliers, including Krost
+c.	Appliances suppliers like Harvey Norman, Appliances Online and Fixture and Fitting suppliers like Cooks.
+d.	Subcontractor invoice review will be completed via the Procore workflow and will be returned to the contractor if missing supporting documents.
+e.            Initial review must be done by CA to ensure contractor provided sufficient docs. and if the numbers are reflecting the true site progress, also there is no unapproved variation in the progress calm/invoice.
+f.            Second round of review must be done by PM to ensure  the numbers are reflecting the true site progress, also there is no unapproved variation in the progress calm/invoice.
+g.           3rd round of review must be done by PM confirming if subcontractor claim is related to Head Contract Variation, the head contract variation already been claimed and sent to the client for payment.
+h.          Any payment over $100,000 would need Director's approval before getting processed by accounts. 
+i.            Once all above stages are completed, invoice will go to account for final review and payment.</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>f
+g
+h</td></tr>
+<tr><th>SM</th><td class='rolecell '></td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>d
+e</td></tr>
+<tr><th>HOC</th><td class='rolecell '></td></tr>
+<tr><th>Accounts</th><td class='rolecell on'>a
+b
+c
+i</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/20-progress-claim.html">← Previous</a>
+      <a class="btn" href="../items/22-contract-letting.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

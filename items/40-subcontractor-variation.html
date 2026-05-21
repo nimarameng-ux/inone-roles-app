@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Subcontractor Variation — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Subcontractor Variation</h1>
+          <div class="small">Item 40</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">1.	It must start on the back of the Change Event.
+From Line Items, after clicking on Add to, the following options would appear:
+•	Commitment
+•	Commitment Var
+•	Head Contract Var
+•	Budget Change
+2.For subcontractor variations, the Commitment Var must be used and the correct Subcontractor Contract(in case there is more than 1 sub contract).
+3.If the variation is a result of Head Contract Variation or an unallocated budget item, it can be issued to the contractor by PM and CA.
+4.If the variation is a result of an internal issue that can't be passed on, then it would require the director's approval and the following must be provided 
+a.Why is the variation required ( quick background)
+b.What option do we have gone over or presented with 
+c. What solutions to mitigate the variation
+d. Images if Possible 
+e. Description of works 
+f.Variation Amount 
+g.Amount of original Contract to the contractor</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>3
+4a
+4b
+4c
+4d
+4e
+4f
+4g</td></tr>
+<tr><th>SM</th><td class='rolecell '></td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>1
+2
+3</td></tr>
+<tr><th>HOC</th><td class='rolecell '></td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/39-client-variation.html">← Previous</a>
+      <a class="btn" href="../items/41-organizing-pcg-invitation.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

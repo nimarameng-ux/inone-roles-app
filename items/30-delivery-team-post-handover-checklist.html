@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>DELIVERY TEAM -POST HANDOVER Checklist — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">DELIVERY TEAM -POST HANDOVER Checklist</h1>
+          <div class="small">Item 30</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">1.	✅Outstanding Works
+a) List all outstanding construction works at handover
+Assign items to Site Manager and relevant contractor
+Track until completion with photos attached
+
+2.	✅Outstanding Furniture
+a)	List all furniture not delivered or installed at handover
+b)	Assign to Site Manager and supplier
+c)	Close items after inspection and photo evidence
+
+3.	✅Outstanding Defects
+a)	Record all defects identified during client walkthrough
+b)	Align with internal defect list
+c)	Assign and track until rectified with photos
+
+4.	✅Additional Works Requested by Client
+a)	Record all post-handover client requests
+b)	Track approval or rejection status
+
+5.	✅Outstanding Documents
+a)	Occupation Certificate attached
+b)	O&M manuals, warranties, and correspondence linked
+c)	Architectural & FF&E as-built drawings issued
+d)	Services as-built drawings issued
+
+6.	✅Training & Certifications
+a)	Billi system training completed and confirmed
+b)	Mechanical systems training completed
+c)	Electrical training completed
+d)	AV training completed (quick reference guides provided)
+e)	Security system training completed
+f)	Client-issued Practical Completion certificate attached</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>1a
+2a
+2b
+2c
+
+3a
+3b
+3c
+
+5a
+5b
+5c
+5d
+
+6a
+6b
+6c
+6d
+6e
+6f</td></tr>
+<tr><th>SM</th><td class='rolecell on'>1a
+2a
+2b
+2c
+
+3a
+3b
+3c
+
+5a
+5b
+5c
+5d</td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell on'>5a
+5b
+5c
+5d</td></tr>
+<tr><th>HOC</th><td class='rolecell '></td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/29-site-safety-audit.html">← Previous</a>
+      <a class="btn" href="../items/31-site-manager-weekly-checklist.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>

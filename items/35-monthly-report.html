@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Monthly Report — Roles & Responsibilities</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#f4c20d">
+  <link rel="icon" href="../assets/icons/icon-192.png">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Company logo"/>
+        <div>
+          <div class="kicker">Roles & Responsibilities</div>
+          <h1 class="h1">Monthly Report</h1>
+          <div class="small">Item 35</div>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <a class="btn" href="../index.html">← Back to list</a>
+        <button class="btn btn-ghost" id="copyLink" type="button">Copy link</button>
+        <button class="btn btn-ghost" onclick="window.print()" type="button">Print</button>
+      </div>
+
+    </header>
+
+    <section class="card">
+      <h2 style="margin:0 0 8px">Description</h2>
+      <div class="desc">Below information must be included in the monthly report:
+
+1.	Head Contract Summary
+a)	Head Contract Value
+b)	Variations Approved to Date
+c)	Revised Contract Sum
+d)	Tender Margin
+e)	Amendment to tender margin (brief explanation of why + key figures)
+f)	Final Tender Margin
+g)	Construction Budget
+
+2.	Financial Details (table)
+For each item/line in the table:
+a)	Description
+b)	This Month value
+c)	Comments (only where needed to explain movement/variance)
+
+3.	Variation Report (high-level totals)
+a)	Approved Variations (total)
+b)	Pending Variations (total)
+c)	Declined Variations (total)
+d)	Internal Variations (total)
+
+4.	Margin Forecast
+a)	Current Construction Budget
+b)	Committed to date
+c)	Forecast to complete
+d)	Projected Letting Gains
+e)	Tender Margin
+f)	Forecast Total Margin
+
+5.	Progress Claim Summary
+For each claim:
+a.	Claim number
+b.	Claim amount
+c.	Status (e.g., PAID)
+d.	Total claimed to date
+
+6.	Approved Variations Summary (detailed list)
+For each approved variation line item (as shown in the summary table):
+a.	Variation reference / title
+b.	Value
+c.	Status (e.g., SUBMITTED / INVOICED / PAID where applicable)
+d.	Total approved variations
+
+7.	Declined Variations Summary (detailed list)
+For each declined variation line item:
+a.	Variation reference / title
+b.	Value
+c.	Reason / brief note (if the sheet has a comments/notes area for it)
+d.	Total declined variations
+
+8.	Internal Variations Summary (detailed list)
+For each internal variation line item:
+a)	Reference / title
+b)	Value
+c)	Comment on why it’s internal + impact
+d)	Total internal variations
+
+9.	Program Update
+a)	Current program status vs baseline
+b)	Key delays / drivers / recovery actions
+c)	Commentary note (your template note says to attach the program showing the “current date” line)
+10.	Procurement
+a.	Procurement status summary (what’s procured / what’s outstanding)
+b.	Any long-lead risks and required actions
+
+11.	Risks
+a.	Key current risks (commercial / program / delivery)
+b.	Mitigation actions
+c.	Any budget impacts or approvals needed
+
+12.	Incidents
+a.	Incidents summary (if none, state “Nil”)
+b.	Corrective actions / close-out status
+
+13.	General Notes
+a.	Audits (outcomes / actions / close-out)
+b.	Client instructions / key directions
+c.	Any other notable project notes for the month</div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2 style="margin:0 0 8px">Responsibility</h2>
+      <div class="small">Non-empty cells indicate responsibility/ownership notes from the spreadsheet.</div>
+      <table>
+        <tbody>
+<tr><th>PM</th><td class='rolecell on'>1a
+1b
+1c
+1d
+1e
+1f
+1g
+
+2a
+2b
+2c
+
+3a
+3b
+3c
+3d
+
+4a
+4b
+4c
+4d
+4e
+
+6a
+6c
+6b
+6c
+
+7a
+7b
+7c
+7d
+
+8a
+8b
+8c
+8d</td></tr>
+<tr><th>SM</th><td class='rolecell '></td></tr>
+<tr><th>OM</th><td class='rolecell '></td></tr>
+<tr><th>Tendering</th><td class='rolecell '></td></tr>
+<tr><th>Design</th><td class='rolecell '></td></tr>
+<tr><th>CA</th><td class='rolecell '></td></tr>
+<tr><th>HOC</th><td class='rolecell on'>1
+23
+4
+5
+6
+7
+8</td></tr>
+<tr><th>Accounts</th><td class='rolecell '></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+
+    <div class="pager">
+      <a class="btn btn-ghost" href="../items/31-site-manager-weekly-checklist.html">← Previous</a>
+      <a class="btn" href="../items/36-project-closure.html">Next →</a>
+    </div>
+
+  </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('../sw.js').catch(() => {}));
+  }
+</script>
+
+<script>
+(function(){
+  const btn = document.getElementById('copyLink');
+  if(!btn) return;
+  btn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = 'Link copied';
+      document.body.appendChild(t);
+      setTimeout(()=>t.classList.add('show'), 10);
+      setTimeout(()=>{t.classList.remove('show'); setTimeout(()=>t.remove(), 200);}, 1400);
+    } catch(e) {}
+  });
+})();
+</script>
+
+</body>
+</html>
