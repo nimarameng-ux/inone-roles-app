@@ -21,17 +21,11 @@
         </div>
       </div>
       <div class="actions home-actions">
-        <a class="btn btn-ghost" href="./reference-library.html">Reference Library</a>
         <a class="btn btn-ghost" href="#visualGuides">Visual Guides</a>
       </div>
     </header>
 
     <section class="quick-panel" aria-label="Quick actions">
-      <a class="quick-card" href="./reference-library.html">
-        <span class="quick-kicker">Reference</span>
-        <strong>Open Reference Library</strong>
-        <small>External links for tasks without screenshots</small>
-      </a>
       <a class="quick-card" href="#visualGuides">
         <span class="quick-kicker">Training</span>
         <strong>Visual Guide Tasks</strong>
@@ -567,7 +561,6 @@ a)	project lessons learnt completed before close out' data-roles='PM,SM,OM,CA,HO
   <a href="#dashGrid">Roles</a>
   <a href="#q">Search</a>
   <a href="#visualGuides">Guides</a>
-  <a href="./reference-library.html">Refs</a>
 </nav>
 
 <script>
@@ -605,20 +598,6 @@ a)	project lessons learnt completed before close out' data-roles='PM,SM,OM,CA,HO
     'items/23-purchase-order-letting.html',
     'items/25-drawing-upload.html'
   ]);
-  const REF_TASKS = new Set([
-    'items/01-issue-a-job-number.html','items/03-initiate-design-checklist.html','items/04-initiate-tendering-checklist.html',
-    'items/05-initiate-sales-checklist.html','items/07-initiate-kick-off-checklistsm.html','items/08-cross-referencing-scope-of-works-with-drawing.html',
-    'items/09-trade-comparison.html','items/10-procurement-schedule.html','items/11-dilapidation-report.html',
-    'items/12-services-design-management-and-coordination-with-architectinterior-designer.html','items/13-structural-design-management-and-coordination-with-architectinterior-designer.html',
-    'items/14-contract-negotiation.html','items/15-project-management-plan.html','items/16-whs-management-plan.html',
-    'items/18-programtrade-program.html','items/19-cash-flow.html','items/20-progress-claim.html','items/22-contract-letting.html',
-    'items/24-submittal-management.html','items/26-document-upload.html','items/27-weekly-report.html','items/28-meeting-minutes.html',
-    'items/29-site-safety-audit.html','items/30-delivery-team-post-handover-checklist.html','items/31-site-manager-weekly-checklist.html',
-    'items/35-monthly-report.html','items/36-project-closure.html','items/37-defect-inspection-and-defect-management.html',
-    'items/38-change-event.html','items/39-client-variation.html','items/40-subcontractor-variation.html','items/41-organizing-pcg-invitation.html',
-    'items/42-rfi-management.html','items/43-fortnightly-construction-meeting.html','items/44-lesson-learnt.html','items/45-operation-manager-report.html','items/46-1breadcrumbs.html'
-  ]);
-
   document.querySelectorAll('#list li a').forEach(a => {
     const href = a.getAttribute('href');
     const badges = a.querySelector('.badges');
@@ -627,10 +606,8 @@ a)	project lessons learnt completed before close out' data-roles='PM,SM,OM,CA,HO
     feature.className = 'feature-badges';
     if(GUIDE_TASKS.has(href)){
       feature.innerHTML = '<span class="feature-badge guide">Visual Guide</span><span class="feature-badge ready">Training Ready</span>';
-    } else if(REF_TASKS.has(href)){
-      feature.innerHTML = '<span class="feature-badge ref">Reference Links</span><span class="feature-badge pending">Needs Screenshots</span>';
     } else {
-      feature.innerHTML = '<span class="feature-badge pending">Needs Review</span>';
+      feature.innerHTML = '<span class="feature-badge pending">Needs Screenshots</span>';
     }
     badges.insertAdjacentElement('afterend', feature);
   });
