@@ -1,8 +1,8 @@
-const CACHE_NAME = 'rr-app-v5';
+const CACHE_NAME = 'rr-app-v7';
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    await cache.addAll(['./','./index.html','./styles.css','./manifest.json','./assets/logo.svg','./assets/icons/icon-192.png','./assets/icons/icon-512.png','./sitemap.json']);
+    await cache.addAll(['./','./index.html','./styles.css','./manifest.json','./assets/logo.svg','./assets/icons/icon-192.png','./assets/icons/icon-512.png','./sitemap.json','./reference-library.html']);
     try {
       const res = await fetch('./sitemap.json', {cache:'no-store'});
       if (res.ok) {
