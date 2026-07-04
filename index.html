@@ -17,11 +17,32 @@
         <div>
           <div class="kicker">Roles & Responsibilities</div>
           <h1 class="h1">Task Register</h1>
-          <div class="small">43 items • Updated from Excel</div>
+          <div class="small">43 items • Mobile-ready v1 • Updated from Excel</div>
         </div>
       </div>
-      <div class="small">INONE Projects branded app • installable once hosted</div>
+      <div class="actions home-actions">
+        <a class="btn btn-ghost" href="./reference-library.html">Reference Library</a>
+        <a class="btn btn-ghost" href="#visualGuides">Visual Guides</a>
+      </div>
     </header>
+
+    <section class="quick-panel" aria-label="Quick actions">
+      <a class="quick-card" href="./reference-library.html">
+        <span class="quick-kicker">Reference</span>
+        <strong>Open Reference Library</strong>
+        <small>External links for tasks without screenshots</small>
+      </a>
+      <a class="quick-card" href="#visualGuides">
+        <span class="quick-kicker">Training</span>
+        <strong>Visual Guide Tasks</strong>
+        <small>Jump to tasks with embedded screenshots</small>
+      </a>
+      <a class="quick-card" href="#myRoleCard">
+        <span class="quick-kicker">Personal view</span>
+        <strong>Set My Role</strong>
+        <small>Save PM, SM, OM, CA or another role on this device</small>
+      </a>
+    </section>
 
 <section class="dash" aria-label="Role dashboards">
       <div class="dash-head">
@@ -72,6 +93,20 @@
       </div>
     </section>
 
+    <section class="guide-jump" id="visualGuides" aria-label="Visual guide tasks">
+      <div class="dash-head">
+        <h2 class="dash-title">Visual Guide Tasks</h2>
+        <div class="small">Tasks with embedded screenshot-based training guides.</div>
+      </div>
+      <div class="guide-jump-grid">
+        <a class="guide-jump-card" href="items/02-create-a-job-on-procore.html"><strong>Create a Job on Procore</strong><span>25 screenshots</span></a>
+        <a class="guide-jump-card" href="items/06-initiate-kick-off-checklistpm.html"><strong>Kick Off Checklist PM</strong><span>7 screenshots</span></a>
+        <a class="guide-jump-card" href="items/21-invoice-review.html"><strong>Invoice Review</strong><span>4 screenshots</span></a>
+        <a class="guide-jump-card" href="items/23-purchase-order-letting.html"><strong>Purchase Order Letting</strong><span>12 screenshots</span></a>
+        <a class="guide-jump-card" href="items/25-drawing-upload.html"><strong>Drawing Upload</strong><span>7 screenshots</span></a>
+      </div>
+    </section>
+
     <div class="grid">
       <aside class="card">
         <h2 style="margin:0 0 10px">Find</h2>
@@ -86,6 +121,23 @@
 <label class='chip'><input type='checkbox' value='CA'/> CA</label>
 <label class='chip'><input type='checkbox' value='HOC'/> HOC</label>
 <label class='chip'><input type='checkbox' value='Accounts'/> Accounts</label>
+        </div>
+
+        <div class="my-role-card" id="myRoleCard">
+          <div class="small">My default role on this device</div>
+          <select id="myRoleSelect" aria-label="Select my default role">
+            <option value="">Select role…</option>
+            <option value="PM">PM</option>
+            <option value="SM">SM</option>
+            <option value="OM">OM</option>
+            <option value="Tendering">Tendering</option>
+            <option value="Design">Design</option>
+            <option value="CA">CA</option>
+            <option value="HOC">HOC</option>
+            <option value="Accounts">Accounts</option>
+          </select>
+          <button class="btn btn-compact" type="button" id="applyMyRole">Apply My Role</button>
+          <button class="btn btn-ghost btn-compact" type="button" id="clearMyRole">Clear</button>
         </div>
         </aside>
 
@@ -206,141 +258,94 @@ e)	site protection. lifts and common areas
 a)	mechanical services isolation and dilapidation report
 b)	electrical services isolation and dilapidation report
 c)	fire services isolation and dilapidation report(if not using incumbent contractor)
-d)	hydraulic services isolation and dilapidation report
-e)	electrical services /temp switchboard installation' data-roles='OM,Tendering,HOC'><a href='items/07-initiate-kick-off-checklistsm.html'><strong>Initiate Kick Off Checklist(SM)</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge on' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='cross referencing scope of works with drawing 1.	checking the tender letter against drawings and the contractor&#39;s scope of work
-2.	checking the tender letter against the pmp provided by the tendering team
-3.	checking the tender letter against the program
-4.	checking the tender letter against the site requirements and completing the forecast section of procore, make the financial status of the project trackable' data-roles='PM,Tendering'><a href='items/08-cross-referencing-scope-of-works-with-drawing.html'><strong>Cross referencing scope of works with drawing</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge on' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='trade comparison 1.	review all contractor quotes and shortlist them.
-2.	negotiate with the shortlisted contractor and try to get the most competitive rate, also ensuring availability and capacity to complete the project as per the program. 
-3.	summarizing the recommendation for the nominate trade after negotiation and putting forward for the management approval.' data-roles='PM,Tendering'><a href='items/09-trade-comparison.html'><strong>Trade Comparison</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge on' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='procurement schedule generating an excel spreadsheet for all items in the ffe and all subcontractor agreements to track the following matters:
-1.	contractor or supplier has been formally engaged
-2.	deposit has been paid(if requires)
-3.	shop drawings have been issued and reviewed
-4.	ensuring all trades have been engaged
-5.	shared with the site team to follow up with suppliers
-6.  site manager to review the programme and procurement schedule upon receipt and proactively follow up with all suppliers to ensure deliveries remain on track, including lights, furniture, blinds, curtains, joinery and toilet partitions, to avoid last-minute surprises that could impact the handover date.' data-roles='PM,SM,CA'><a href='items/10-procurement-schedule.html'><strong>Procurement Schedule</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='dilapidation report 1.	photos are taken from the site reflecting the current status of the site(each photo to have a description reflecting the finding)
-2.	a summary of the findings has been put into the powerpoint file (address and logo, and client name have changed) and converted to a pdf
-3.	photos in a group of 4 on each page extracted from procore
-4.	summary page and photos are merged to create the final dilapidation report.
-5.	dilapidation report has to be sent to the client and building management team using the correspondence tool
-6.	dilapidation report must be sent before commencement on site and putting down protections.
-7.	services dilapidation report must be completed before completion of demolition, reflecting the current status of services, mostly electrical, mechanical and hydraulic.
-8.	services dilapidation report must be sent to the client and building management team using the correspondence tool' data-roles='PM,SM,OM,CA'><a href='items/11-dilapidation-report.html'><strong>Dilapidation Report</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='services design management and coordination with architect/interior designer 1.	cross-referencing the consultant&#39;s scope of work against the following documents before engaging the consultant:
-a)	tender letter and design obligation outlined in the tender letter
-b)	head contract(agreement between inone projects and the client)
-c)	council, building surveyor or certifier da, cdc or building permit checklist
-d)	architectural drawings ensuring all areas of work are captured in the consultant&#39;s scope of work
 
-2.	formally engaging the consultant, ensuring documents are ready as per the construction program for the authority requirement to commence the work(da/cc/cdc/bp) and for the tendering to finalize the trade cost based on ifc set of drawings' data-roles='PM,CA'><a href='items/12-services-design-management-and-coordination-with-architectinterior-designer.html'><strong>Services Design Management and Coordination with Architect/Interior Designer</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='structural design management and coordination with architect/interior designer 1.	cross-referencing the consultant&#39;s scope of work against the following documents before engaging the consultant:
-a)	tender letter and design obligation outlined in the tender letter
-b)	head contract(agreement between inoneprojects and the client)
-c)	council, building surveyor or certifier da, cdc or building permit checklist
-d)	architectural drawings ensuring all areas of work are captured in the consultant&#39;s scope of work
+4.	✅delivery coordination
+a)	all subcontractors inducted before works commence
+b)	delivery path planned and agreed with building management
+c)	site diary / daily log process established
 
-2.	formally engaging the consultant, ensuring documents are ready as per the construction program for the authority requirement to commence the work(da/cc/cdc/bp) and for the tendering to finalize the trade cost based on ifc set of drawings' data-roles='PM,CA'><a href='items/13-structural-design-management-and-coordination-with-architectinterior-designer.html'><strong>Structural Design Management and Coordination with Architect/Interior Designer</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='contract negotiation 1.	negotiate with the nominated contractor and try to get the most competitive rate, also ensuring their quote matches the following requirements:
-2.	negotiate with the shortlisted contractor and try to get the most competitive rate, also ensuring availability and capacity to complete the project as per the program. the final set of architectural and services drawings
-3.	negotiate with the shortlisted contractor and try to get the most competitive rate, also ensuring availability and capacity to complete the project as per the program. availability and capacity to complete the project as per the construction program
-4.	negotiate with the shortlisted contractor and try to get the most competitive rate, also ensuring availability and capacity to complete the project as per the program. inclusion of items as per building guideline, including after-hour work, nosy works, engaging 3rd party to complete wuc as per building management request and guideline like bms, commissioning etc program.' data-roles='PM'><a href='items/14-contract-negotiation.html'><strong>Contract Negotiation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='project management plan 1.	review the pmp completed and submitted by the tendering team at the tender stage
-2.	add, remove and adjust the project management plan based on the latest scope of work, building guidelines, lead-time, contractor availability, and site and weather conditions
-3.	cross-checking the pmp with the construction program
-4.	ensure the site establishment requirement, including the hoarding and exclusion zones, are clearly outlined in the report
-5.	this should form part of the subcontract agreement' data-roles='PM,CA,HOC'><a href='items/15-project-management-plan.html'><strong>Project Management Plan</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='whs management plan 1.review the fitout guide line and building requirements and incorporate it into the whse management plan including hours of work, scope of works' data-roles='PM,CA'><a href='items/16-whs-management-plan.html'><strong>WHS Management Plan</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='da and cc/cdc and oc process/building permit 1.	for da:
-a)	engage a town planner
-b)	obtain a checklist from the town planner 
-c)	gather all information from consultants and 3rd parties
-d)	obtain the contribution letter and arrange payment(ensure a po has been raised on procore and cost comes from the right budget)
-e)	submit the da
-
-2.	for cdc and building permit:
-a)	engage the building surveyor or private certifier 
-b)	obtain a checklist 
-c)	gather all information from consultants, interior designer or architect and 3rd parties
-d)	obtain the contribution letter and arrange payment(ensure a po has been raised on procore and cost comes from the right budget)
-e)	lodge the cdc' data-roles='PM,CA'><a href='items/17-da-and-cccdc-and-oc-processbuilding-permit.html'><strong>DA and CC/CDC and OC Process/Building Permit</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='program/trade program 1.	client program:
-a)	review the tender program and restructure it to suit the final project&#39;s scope of works and drawings, considering all long lead-times, access restrictions, after-hours work and other conditions that might impact the program.
-b)	ensure the updated program is aligned with the project management plan
-c)	in order to have 2-3weeks of buffer, create a new section and rename as defect rectification and oc or practical completion with a duration of 2-3weeks.
-
-2.	subcontractor program:
-a)	in order to have 2-3weeks of buffer, delete the defect rectification and oc or practical completion section of program which has a duration of 2-3weeks.' data-roles='PM'><a href='items/18-programtrade-program.html'><strong>Program/Trade program</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='cash flow 1.	generate an excel spreadsheet(use the template on the server) and spread the project value based on the breakdown of the contract across the project duration.
-2.	cash flow must be submitted via correspondence tool of procore.' data-roles='PM'><a href='items/19-cash-flow.html'><strong>Cash Flow</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='progress claim 1.	if the project has a predefined project milestone:
-a)	create a progress claim on procore and send it to the client via the email tool of progress claim, copy the accounts team and advise the client that the actual invoice will follow the progress claim.
-b)	request the accounts team to raise an invoice matching the progress claim and ask them to send it to the client along with supporting documents and a statutory declaration
-
-2.	if the progress claim must be made based on site progress
-a)	create a progress claim on procore based on site progress and send it to the client via the email tool of progress claim, copy the accounts team.
-b)	follow up with the client or client side pm, either meet them on site or meet their qs to review and assess the progress claim.
-c)	once progress claim approved and payment schedule received, send it to the account team to convert it to an invoice and ask them to issue it to the client along with supporting documents and a statutory declaration via same email trail on procore.' data-roles='PM,Accounts'><a href='items/20-progress-claim.html'><strong>Progress Claim</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='invoice review the invoice must be updated by the few suppliers and contractors. the following groups are excluded from this process, so accounts will be uploading invoices on their behalf:
-
-a.	certifiers and building surveyors
-b.	most of the furniture suppliers, including krost
-c.	appliances suppliers like harvey norman, appliances online and fixture and fitting suppliers like cooks.
-d.	subcontractor invoice review will be completed via the procore workflow and will be returned to the contractor if missing supporting documents.
-e.            initial review must be done by ca to ensure contractor provided sufficient docs. and if the numbers are reflecting the true site progress, also there is no unapproved variation in the progress calm/invoice.
-f.            second round of review must be done by pm to ensure  the numbers are reflecting the true site progress, also there is no unapproved variation in the progress calm/invoice.
-g.           3rd round of review must be done by pm confirming if subcontractor claim is related to head contract variation, the head contract variation already been claimed and sent to the client for payment.
-h.          any payment over $100,000 would need director&#39;s approval before getting processed by accounts. 
-i.            once all above stages are completed, invoice will go to account for final review and payment.' data-roles='PM,CA,Accounts'><a href='items/21-invoice-review.html'><strong>Invoice review</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='contract letting once confirmation is received from trades that their quote is aligned with the scope of works and the latest set of drawings and building rules, and the final price has been agreed on, the subcontractor agreement or purchase order can be drafted on procore.
-ensuring all items related to the contract and po have been determined and attached:
-1.	payment terms and include any deposit requirements 
-2.	default retention
-3.	contract dates
-4.	main contractor’s representative:
-5.	site contact:
-6.	working hours on site
-7.	insurances required
-8.	payment term
-9.	defects liability period
-10.	warranties and other documents required on completion:
-11.	annexure a – scope of works.
-12.	the amount of liquidated damages per day (clause 27)
-13.	transmittal
-14.	annexure h - house rules
-15.	annexure d – program
-16.	annexure e – drawings-architectural documents:
-17.	annexure f – drawings-engineer documents:
-18.	annexure g – fixtures & finishes documents:
-19.	annexure b – whs site management plan
-
-once the above steps are completed, the subcontractor agreement can be reviewed and formally sent to the trades via email toll of commitment.' data-roles='PM,CA'><a href='items/22-contract-letting.html'><strong>Contract letting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='purchase order letting once confirmation is received from trades that their quote is aligned with the scope of works and the latest set of drawings and building rules, and the final price has been agreed on, the subcontractor agreement or purchase order can be drafted on procore.
-ensuring all items related to the contract and po have been determined and attached:
-1.	payment terms and include any deposit requirements 
-2.	default retention
-3.	contract dates
-4.	main contractor’s representative:
-5.	site contact:
-6.	working hours on site
-7.	insurances required
-8.	payment term
-9.	defects liability period
-10.	warranties and other documents required on completion:
-11.	annexure a – scope of works.
-12.	the amount of liquidated damages per day (clause 27)
-13.	transmittal
-14.	annexure h - house rules
-15.	annexure d – program
-16.	annexure e – drawings-architectural documents:
-17.	annexure f – drawings-engineer documents:
-18.	annexure g – fixtures & finishes documents:
-19.	annexure b – whs site management plan
-
-once the above steps are completed, the subcontractor agreement can be reviewed and formally sent to the trades via email toll of commitment.' data-roles='PM,CA'><a href='items/23-purchase-order-letting.html'><strong>Purchase order letting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+5.	✅communication
+a)	contact list confirmed
+b)	urgent escalation path agreed
+c)	weekly site reporting rhythm confirmed' data-roles='SM,OM'><a href='items/07-initiate-kick-off-checklistsm.html'><strong>Initiate Kick Off Checklist(SM)</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='cross referencing scope of works with drawing 1.	tendering team to issue the scope of work to the pm and design team
+2.	pm and design team to review the drawings against the scope of works
+3.	any inconsistency must be raised with tendering team before contract execution
+4.	any design gap must be raised before procurement
+5.	confirmed scope must be used for letting and trade comparison' data-roles='PM,Tendering,Design,CA'><a href='items/08-cross-referencing-scope-of-works-with-drawing.html'><strong>Cross referencing scope of works with drawing</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge on' data-role='Tendering'>Tendering</span><span class='badge on' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='trade comparison 1.	quote comparison must be completed for all major packages
+2.	at least 3 quotes to be obtained where possible
+3.	comparison must include exclusions, clarifications and risks
+4.	preferred contractor to be recommended with reason
+5.	approval must be obtained before issuing contract or purchase order' data-roles='PM,CA,HOC'><a href='items/09-trade-comparison.html'><strong>Trade Comparison</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='procurement schedule 1.	procurement schedule to be prepared for long lead items and major packages
+2.	lead times must be checked against the program
+3.	procurement risk must be flagged early
+4.	schedule must be updated weekly
+5.	items delayed must be reported in weekly report' data-roles='PM,CA'><a href='items/10-procurement-schedule.html'><strong>Procurement Schedule</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='dilapidation report 1.	photos must be taken before work starts
+2.	common areas, lifts, access paths, amenities and work areas must be captured
+3.	report must be saved in the project folder and uploaded to procore
+4.	issues must be raised before commencement to avoid liability
+5.	site manager to confirm completion before works start' data-roles='PM,SM,OM'><a href='items/11-dilapidation-report.html'><strong>Dilapidation Report</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='services design management and coordination with architect/interior designer 1.	services drawings to be coordinated with architectural drawings and design intent
+2.	services design gaps to be raised before construction
+3.	consultants to respond within agreed timeframe
+4.	changes to be documented and communicated to delivery team
+5.	final services drawings to be uploaded to procore' data-roles='PM,Design,CA'><a href='items/12-services-design-management-and-coordination-with-architectinterior-designer.html'><strong>Services Design Management and Coordination with Architect/Interior Designer</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge on' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='structural design management and coordination with architect/interior designer 1.	structural requirements must be reviewed against architectural design
+2.	structural consultant to be engaged where required
+3.	penetrations, supports and loading issues to be coordinated before site works
+4.	approved structural details must be issued to site
+5.	changes must be saved and communicated to the team' data-roles='PM,Design,CA'><a href='items/13-structural-design-management-and-coordination-with-architectinterior-designer.html'><strong>Structural Design Management and Coordination with Architect/Interior Designer</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge on' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='contract negotiation 1.	contract terms must be reviewed before execution
+2.	commercial risks, exclusions and special conditions must be noted
+3.	insurance, security, delay and payment terms must be checked
+4.	departures must be reviewed by management
+5.	final contract must be saved in the project folder' data-roles='PM,HOC'><a href='items/14-contract-negotiation.html'><strong>Contract Negotiation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='project management plan 1.	pmp must be prepared before commencement
+2.	project contacts, scope, program, methodology and risk items must be included
+3.	building rules and client requirements must be incorporated
+4.	pmp must be issued to site team and uploaded to procore
+5.	pmp to be updated if project conditions materially change' data-roles='PM,SM,OM,CA'><a href='items/15-project-management-plan.html'><strong>Project Management Plan</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='whs management plan 1.	whs management plan must be prepared before works commence
+2.	project specific risks must be listed
+3.	swms and contractor documents must be obtained and reviewed
+4.	emergency management and site rules must be included
+5.	whs documentation must be uploaded to procore and communicated to site' data-roles='PM,SM,OM'><a href='items/16-whs-management-plan.html'><strong>WHS Management Plan</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='da and cc/cdc and oc process/building permit 1.	approval pathway must be confirmed before works commence
+2.	pca/building surveyor to be engaged where required
+3.	consultants to provide required compliance documentation
+4.	conditions of consent/permit to be reviewed and communicated
+5.	oc/final certificate requirements to be tracked before completion' data-roles='PM,Design,CA'><a href='items/17-da-and-cccdc-and-oc-processbuilding-permit.html'><strong>DA and CC/CDC and OC Process/Building Permit</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge on' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='program/trade program 1.	construction program must be prepared before commencement
+2.	trade program must be issued to contractors
+3.	critical path and long lead items must be reviewed
+4.	program must be updated weekly
+5.	delays must be communicated and recorded' data-roles='PM,SM,OM,CA'><a href='items/18-programtrade-program.html'><strong>Program/Trade program</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='cash flow 1.	cash flow must be prepared based on construction program and claims
+2.	claim timing must be aligned with contract payment schedule
+3.	forecast must be updated monthly
+4.	approved variations must be included
+5.	risks to cash flow must be reported' data-roles='PM,CA,HOC,Accounts'><a href='items/19-cash-flow.html'><strong>Cash Flow</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='progress claim 1.	progress claim to be prepared in line with contract requirements
+2.	claim must be supported by progress evidence
+3.	claim must be reviewed before submission
+4.	approved claim and payment status to be tracked
+5.	claim information to be reflected in monthly report' data-roles='PM,CA,Accounts'><a href='items/20-progress-claim.html'><strong>Progress Claim</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='invoice review 1.	invoice received to be checked against po/contract value and progress
+2.	pm to confirm works completed or goods received
+3.	ca/accounts to process payment after approval
+4.	discrepancies must be raised before approval' data-roles='PM,CA,Accounts'><a href='items/21-invoice-review.html'><strong>Invoice review</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='contract letting 1.	contract package must be prepared with approved scope and drawings
+2.	trade comparison and approval must be completed before letting
+3.	insurance and company details must be checked
+4.	contract must be issued and saved
+5.	executed contract must be uploaded to procore' data-roles='PM,CA,HOC'><a href='items/22-contract-letting.html'><strong>Contract letting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='purchase order letting 1.	po must be raised only after approved scope and value
+2.	po description must be clear and include inclusions/exclusions where required
+3.	po must match approved quote and budget code
+4.	po to be issued to supplier/contractor and saved' data-roles='PM,CA'><a href='items/23-purchase-order-letting.html'><strong>Purchase order letting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
 <li data-text='submittal management 1.the submittal package must be created first, then the submittals created inside(submittal package name: joinery/furniture/signage/electrical services/mechanical services/hydraulic services)
 2.for joinery, furniture and signage, the architect(external) or internal design team must review the shop drawing/duration must be between 1-4 days depends on the number of drawings and the urgency of it./input of site manager or operation manager and project manager, also must be obtained within the same time frame/entire construction team involved in the project must be in the distribution list.
 3.for services, the services designer must be the reviewer /duration must be between 1-4 days  depending depends on the number of drawings and the urgency of it.//entire construction team involved in the project must be in the distribution list.
@@ -356,7 +361,8 @@ f-mechanical equipment schedule
 5.once the review process completed, the submittal must be closed, this would allow the reviewed document returned to the contract to take action.
 
 6.if revised set would be required, then new revision must be created and same process as listed above until workflow completed and document returned to the contractor.' data-roles='PM,CA'><a href='items/24-submittal-management.html'><strong>Submittal management</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='drawing upload all drawings must be uploaded on procore from the moment the delivery team took over the project all the way to the completion stage.
+<li data-text='drawing upload all drawing must be uploaded on procore and floor plan management:
+all drawings must be uploaded in the correct section with the right discipline, and the following conditions must be followed:
 drawings must be uploaded separately for each floor or each area of the project
 each discipline show has it&#39;s own section like 
 1.	architectural
@@ -428,355 +434,118 @@ c)	close items after inspection and photo evidence
 3.	✅outstanding defects
 a)	record all defects identified during client walkthrough
 b)	align with internal defect list
-c)	assign and track until rectified with photos
+c)	issue to contractors with due dates
+d)	track through to closure
 
-4.	✅additional works requested by client
-a)	record all post-handover client requests
-b)	track approval or rejection status
+4.	✅outstanding documentation
+a)	om manuals requested and tracked
+b)	as-built drawings requested and tracked
+c)	warranties and certificates collected
 
-5.	✅outstanding documents
-a)	occupation certificate attached
-b)	o&m manuals, warranties, and correspondence linked
-c)	architectural & ff&e as-built drawings issued
-d)	services as-built drawings issued
-
-6.	✅training & certifications
-a)	billi system training completed and confirmed
-b)	mechanical systems training completed
-c)	electrical training completed
-d)	av training completed (quick reference guides provided)
-e)	security system training completed
-f)	client-issued practical completion certificate attached' data-roles='PM,SM,CA'><a href='items/30-delivery-team-post-handover-checklist.html'><strong>DELIVERY TEAM -POST HANDOVER Checklist</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='site manager weekly checklist a-this form is created to assist site managers in keeping track of their action items during the week, and each of them needs to be closed by providing photos or linking to an item raised on procore.
-1. weekly site audit inspection is done through the inspection tool of procore(must  be linked to the site audit inspection)
-2. look-ahead planner: currently an excel spreadsheet(excel spreadsheet to be attached)
-3. weekly update pm on thursday(link the correspondence send via procore)
-4. updated procurement schedule(attach the procurement spreadsheet with updated notes)
-5. weekly album created on procore
-6. photos taken daily(take a photo from the page and attach)
-7. site diary
-8. toolbox talk(photo for 1breadcrumbs)' data-roles='SM,OM'><a href='items/31-site-manager-weekly-checklist.html'><strong>Site Manager Weekly Checklist</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='monthly report below information must be included in the monthly report:
-
-1.	head contract summary
-a)	head contract value
-b)	variations approved to date
-c)	revised contract sum
-d)	tender margin
-e)	amendment to tender margin (brief explanation of why + key figures)
-f)	final tender margin
-g)	construction budget
-
-2.	financial details (table)
-for each item/line in the table:
-a)	description
-b)	this month value
-c)	comments (only where needed to explain movement/variance)
-
-3.	variation report (high-level totals)
-a)	approved variations (total)
-b)	pending variations (total)
-c)	declined variations (total)
-d)	internal variations (total)
-
-4.	margin forecast
-a)	current construction budget
-b)	committed to date
-c)	forecast to complete
-d)	projected letting gains
-e)	tender margin
-f)	forecast total margin
-
-5.	progress claim summary
-for each claim:
-a.	claim number
-b.	claim amount
-c.	status (e.g., paid)
-d.	total claimed to date
-
-6.	approved variations summary (detailed list)
-for each approved variation line item (as shown in the summary table):
-a.	variation reference / title
-b.	value
-c.	status (e.g., submitted / invoiced / paid where applicable)
-d.	total approved variations
-
-7.	declined variations summary (detailed list)
-for each declined variation line item:
-a.	variation reference / title
-b.	value
-c.	reason / brief note (if the sheet has a comments/notes area for it)
-d.	total declined variations
-
-8.	internal variations summary (detailed list)
-for each internal variation line item:
-a)	reference / title
-b)	value
-c)	comment on why it’s internal + impact
-d)	total internal variations
-
-9.	program update
-a)	current program status vs baseline
-b)	key delays / drivers / recovery actions
-c)	commentary note (your template note says to attach the program showing the “current date” line)
-10.	procurement
-a.	procurement status summary (what’s procured / what’s outstanding)
-b.	any long-lead risks and required actions
-
-11.	risks
-a.	key current risks (commercial / program / delivery)
-b.	mitigation actions
-c.	any budget impacts or approvals needed
-
-12.	incidents
-a.	incidents summary (if none, state “nil”)
-b.	corrective actions / close-out status
-
-13.	general notes
-a.	audits (outcomes / actions / close-out)
-b.	client instructions / key directions
-c.	any other notable project notes for the month' data-roles='PM,HOC'><a href='items/35-monthly-report.html'><strong>Monthly Report</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='project closure below is the current structure of the project closure folder and what needs to be saved in each folder as a minimum.
-1. head contract financials
-this folder must include the financial report in both pdf and excel.
-the financial report must cover:
-a)	tender margin
-b)	letting gain margin
-c)	final margin
-d)	revised contract value
-e)	list of approved variations
-f)	list of rejected variations
-g)	list of internal variations
-h)	confirmation that the entire contract value has been claimed
-i)	confirmation that all approved variations have been claimed (and noted if any are pending for a specific reason)
-2. head contract unapproved variations
-a)	extract each individual unapproved variation from procore and save a pdf copy in this folder.
-b)	extract the list of unapproved variations from procore and save a pdf copy of the list in this folder.
-
-3. post handover checklist
-a)	extract the post handover checklist from procore and save the pdf in this folder.
-b)	the checklist must show that all items below are closed and include evidence where possible (e.g., attach the relevant document, or note where it sits inside the o&m/handover pack):
-c)	items to be closed (with evidence/notes):
-d)	outstanding works
-e)	outstanding furniture
-f)	outstanding defects
-g)	additional works requested by client
-h)	outstanding documents
-i)	occupation certificate
-j)	o&ms, warranties, as-builts
-k)	training billi (tenant to enter into maintenance agreement directly with billi)
-l)	training mechanical (incl. supp units)
-m)	training electrical
-n)	training av (provide quick reference guides to be printed, laminated and left on the boardroom table)
-o)	training security
-p)	client issued pc certificate
-
-4. client handover package
-once the client handover package is ready:
-a)	send it via procore correspondence and attach it as a zip file.
-b)	minimum contents of the zip file:
-1.	glazing certificate
-2.	joinery care and maintenance
-3.	mech certs and as-built
-4.	elect certs and as-built
-5.	fire certs and as-built
-6.	hydraulics certs and as-built
-7.	paint care and maintenance
-8.	flooring cert and maintenance
-9.	tile care and waterproofing certs
-10.	fixture/appliance warranties
-11.	film/sign care and maintenance
-12.	operable wall care/warranty
-13.	cdc approval and oc
-14.	architectural drawings
-15.	practical completion certificate
-16.	av
-17.	furniture
-then:
-c)	save a pdf copy of the procore correspondence in this folder.
-d)	copy the zip handover pack itself into this folder as well.
-
-5. cdc & oc
-a)	save copies of cdc, cc, building permit and oc (or cfi) in this folder.' data-roles='PM,CA'><a href='items/36-project-closure.html'><strong>Project Closure</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='defect inspection and defect management 1.	defect inspection must be carried out multiple time starting from 3 weeks before handover and the last one must be the week before handover
-the following team members must attend the defect inspection pm, sm, operation manager and head designer and head of construction for the last 2 
-
-2.	defects must be managed through procore via the defect list tool
-a)	each defect item should have a link to a drawing (one drawing must be picked by the team, ideal layout and defect should start with a pin on the drawing)
-b)	each defect item should have a description of the defect
-c)	each defect item should nominate the which trade this defect has been addressed to.
-d)	each defect item should have photos attached to it.
-e)	each defect item should have location
-f)	each defect item should be assigned to a contractor
-g)	defect must be closed once contractor completed the defect and provided evidence of completion.' data-roles='PM,SM,OM,HOC'><a href='items/37-defect-inspection-and-defect-management.html'><strong>Defect Inspection and Defect Management</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='change event 1.	first step is filling the excel spreadsheet which the template can be found on the server:
--	p:\inone projects\active projects\2x_xxx -xxx\05_in construction\02_variations\variation working out template
-2.	the excel spreadsheet is usually based on the price that must be provided and shown to the client, so pm or ca can play with margins to make up the final number within the hidden column.
-3.	change event has drop down the section regarding type, change reason and scope, and when filling the change event, must ensure the correct reason has been selected:
-4.	type:(client change, contingency, site condition, tbd or transfer)/change reason:(back charge, client request, design development, existing condition or internal variation), and if it is not recoverable, cost from client must be noted as internal variations and scope must be determined if it is out of scope or in scope), tbd should not be used.
-5.	in the line items section, you must ensure that at least one budget code for each trade(it can be more) has been entered. this will be handy after approval of hcv as it can be sent to the trade as well.
-6.	inone margin must be entered as a separate line item, and it can hold the revealed part of the margin as per the agreed percentage under the contract.
-7.	line items has revenue section and the cost section. revenue must be filled with numbers that the client should see, and cost must be filled with trade cost.
-8.	change event should not be shared with the trade or the client, it is the basis to start the head contract variation or subcontractor variation off it.' data-roles='PM,CA'><a href='items/38-change-event.html'><strong>Change Event</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='client variation 1.	it must start on the back of the change event.
-from line items, after clicking on add to, the following options would appear:
-•	commitment
-•	commitment var
-•	head contract var
-•	budget change
-for the client, the head contract var must be used, and the correct head contract(in case there is more than 1 head contract).' data-roles='PM'><a href='items/39-client-variation.html'><strong>Client Variation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='subcontractor variation 1.	it must start on the back of the change event.
-from line items, after clicking on add to, the following options would appear:
-•	commitment
-•	commitment var
-•	head contract var
-•	budget change
-2.for subcontractor variations, the commitment var must be used and the correct subcontractor contract(in case there is more than 1 sub contract).
-3.if the variation is a result of head contract variation or an unallocated budget item, it can be issued to the contractor by pm and ca.
-4.if the variation is a result of an internal issue that can&#39;t be passed on, then it would require the director&#39;s approval and the following must be provided 
-a.why is the variation required ( quick background)
-b.what option do we have gone over or presented with 
-c. what solutions to mitigate the variation
-d. images if possible 
-e. description of works 
-f.variation amount 
-g.amount of original contract to the contractor' data-roles='PM,CA'><a href='items/40-subcontractor-variation.html'><strong>Subcontractor Variation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='organizing  pcg invitation the moment the email sent, pm must reach out to the client and try to organise a pcg meeting, which could be weekly or fortnightly based on the client&#39;s request.' data-roles='PM'><a href='items/41-organizing-pcg-invitation.html'><strong>Organizing  PCG Invitation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='rfi management 1.all rfi during the construction must be raised and managed through the rfi tool of procore
-a.this would include rfi to the client
-b.rfi to the design team
-c.rfi to engineers
-d.rfi to building management
-2.rfi must be closed once the direction has been provided.
-3.even changes discussed during site walk with design team and client, better to be raised to capture the change and then closed.
-4.this would assist capturing all changes when putting as-built together,' data-roles=''><a href='items/42-rfi-management.html'><strong>RFI Management</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='fortnightly construction meeting 1. construction meeting will be held every fortnightly afternoon in the head office from 2:00 pm to 3:30 pm.
-2. ideally, everyone must join in person, and if they can, it must be discussed in advance.
-3. to make the most of our meeting, expect everyone to share any challenges, lessons learned, or key updates that could benefit the rest of the team. 
-4.all pms moments before the meeting to add your comments and project updates in the relevant sections, this also helps the accounts team track progress claims and upcoming due dates.
-
-agenda
-
-•	general
-o	leaves
-o	project kicking off
-•	design
-•	tendering
-•	whs
-•	lessons learnt
-•	contractors
-•	issues and improvements
-•	trainings
-•	1breadcrumb
-•	monthly report and project closure
-•	procore
-•	invoicing
-•	reviewing active projects' data-roles='PM,SM,OM,HOC'><a href='items/43-fortnightly-construction-meeting.html'><strong>Fortnightly Construction Meeting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='lesson learnt 1.must be discussed during the construction meeting
-2.all team members share their experience about recent lesson learnt as it will give opprtunity to others to avoid the same mistake' data-roles='PM,SM,OM,CA,HOC'><a href='items/44-lesson-learnt.html'><strong>Lesson Learnt</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='operation manager report a.this report must be issued by the end of each month for all live projects, and it should have the following content:
-1.	whse management
-2.	pre-commencement building management requirements
-3.	pre-commencement 
-4.	site establishment
-5.	weekly site audit inspection is done through the inspection tool of procore
-6.	look-ahead planner: currently an excel spreadsheet
-7.	weekly update pm on thursday
-8.	updated procurement schedule
-9.	weekly album created on procore
-10.	photos taken daily
-11.	site diary
-12.	toolbox talk
-13.	number of open items
-14.	number of closed items
-15.	outstanding works
-16.	outstanding furniture
-17.	outstanding defects
-18.	additional works requested by client
-19.	number of inductions
-20.	total hours on site
-21.	site briefing' data-roles='OM'><a href='items/45-operation-manager-report.html'><strong>Operation Manager Report</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
-<li data-text='1breadcrumbs 1.initial set up:
-
-1a.ensure the correct whs management plan is uploaded under the announcements section.
-1b.ensure the whs management plan is assigned to the relevant project.
-1c.where a site has specific conditions or requirements (for example, all workers must sign into the base building induction system such as rapid, cm3, etc.), ensure appropriate questions are added to the induction section to capture and enforce those requirements.
-
-2.day-to-day usage:
-
-2a.ensure all sites have a valid toolbox talk created at the beginning of each week outlining:
-2a.1.changes to site conditions during the week
-2a.2.site-specific requirements
-2a.3.upcoming high-risk activities
-2a.4.the toolbox talk must also be actively updated whenever site conditions change. this could include specific tasks creating exclusion zones, live power works, restricted access areas, or any condition workers must be aware of to ensure they can enter, work and exit site without causing harm to themselves, others, or completed works.
-
-3.use site alerts as a communication tool for workers on site. this may include:
-3a.temporary power or lighting shutdowns
-3b.client site visits
-3c.notices to stop noisy or dusty works
-3d.site cleanliness requirements
-3e.any other important operational updates
-
-4.ensure all workers sign in and sign out correctly, and carry out random checks on site to confirm compliance and enforcement of the system.' data-roles='PM,SM,OM'><a href='items/46-1breadcrumbs.html'><strong>1Breadcrumbs</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+5.	✅lessons learnt
+a)	project lessons learnt completed before close out' data-roles='PM,SM,OM,CA,HOC'><a href='items/30-delivery-team-post-handover-checklist.html'><strong>DELIVERY TEAM -POST HANDOVER Checklist</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='site manager weekly checklist 1.	site diary/daily log completed
+2.	photos uploaded
+3.	safety inspection completed
+4.	2-week lookahead updated
+5.	deliveries and access reviewed
+6.	defects/outstanding works reviewed
+7.	site cleanliness and signage checked
+8.	issues escalated to pm/om' data-roles='SM,OM'><a href='items/31-site-manager-weekly-checklist.html'><strong>Site Manager Weekly Checklist</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='monthly report 1.	monthly report must be prepared with financial and delivery status
+2.	program status, risk items and variations to be included
+3.	progress claim and cash flow status to be reviewed
+4.	report must be issued to management/client as required
+5.	lessons and risks to be captured' data-roles='PM,CA,HOC,Accounts'><a href='items/35-monthly-report.html'><strong>Monthly Report</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='project closure 1.	close out checklist must be completed
+2.	om manuals, warranties, as-builts and certificates collected
+3.	defects closed or formally tracked
+4.	final claim and variations reviewed
+5.	lessons learnt completed' data-roles='PM,SM,OM,CA,HOC'><a href='items/36-project-closure.html'><strong>Project Closure</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='defect inspection and defect management 1.	defect inspection must be completed before handover
+2.	defects must be recorded with photo, location and responsible trade
+3.	due dates must be assigned
+4.	closed defects must have evidence attached
+5.	outstanding defects at handover must be tracked' data-roles='PM,SM,OM,CA'><a href='items/37-defect-inspection-and-defect-management.html'><strong>Defect Inspection and Defect Management</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='change event 1.	change event must be created for all potential variations
+2.	cost, reason and supporting documents must be recorded
+3.	change event must be linked to client or subcontractor variation where applicable
+4.	status must be updated until closed
+5.	variation register must align with change events' data-roles='PM,CA,HOC'><a href='items/38-change-event.html'><strong>Change Event</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='client variation 1.	client variation must be prepared from approved change event
+2.	scope, reason and cost breakdown must be clear
+3.	variation must be submitted and tracked
+4.	approved variations must be reflected in budget/reporting
+5.	rejected/void variations must be recorded' data-roles='PM,CA,HOC,Accounts'><a href='items/39-client-variation.html'><strong>Client Variation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge on' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='subcontractor variation 1.	subcontractor variation must be reviewed against scope and contract
+2.	pm/ca to confirm entitlement and value
+3.	supporting documents must be attached
+4.	approved variations must update commitment value
+5.	variations not accepted must be recorded' data-roles='PM,CA,HOC'><a href='items/40-subcontractor-variation.html'><strong>Subcontractor Variation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='organizing  pcg invitation 1.	pcg invite must be set up with correct attendees
+2.	agenda must be prepared and issued before meeting
+3.	meeting link/location must be correct
+4.	recurring invite to be managed where required
+5.	meeting minutes to follow after pcg' data-roles='PM,CA'><a href='items/41-organizing-pcg-invitation.html'><strong>Organizing  PCG Invitation</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='rfi management 1.	rfi must be raised where information is missing or unclear
+2.	rfi must include clear question, location, drawings and required response date
+3.	rfi must be assigned to correct consultant/client contact
+4.	response must be reviewed and distributed to affected parties
+5.	impact on cost/time must be assessed' data-roles='PM,SM,Design,CA'><a href='items/42-rfi-management.html'><strong>RFI Management</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge ' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge on' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='fortnightly construction meeting 1.	meeting to be held fortnightly or as required
+2.	program, safety, procurement, design, rfis and variations to be reviewed
+3.	actions to be assigned with due dates
+4.	minutes to be issued after meeting
+5.	open actions to be carried forward' data-roles='PM,SM,OM,CA'><a href='items/43-fortnightly-construction-meeting.html'><strong>Fortnightly Construction Meeting</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge on' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='lesson learnt 1.	lesson learnt must be completed before project close out
+2.	issues, causes, impact and future prevention must be captured
+3.	commercial, design, delivery and safety lessons to be included
+4.	lessons to be shared with relevant teams
+5.	mandatory before close-out' data-roles='PM,SM,OM,HOC'><a href='items/44-lesson-learnt.html'><strong>Lesson Learnt</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='operation manager report 1.	om report to capture site performance, safety, program and quality
+2.	risks and escalations to be highlighted
+3.	site audits and weekly checks to be reviewed
+4.	report to be issued to management
+5.	actions to be tracked until closed' data-roles='OM,HOC'><a href='items/45-operation-manager-report.html'><strong>Operation Manager Report</strong><div class='badges'><span class='badge ' data-role='PM'>PM</span><span class='badge ' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge on' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
+<li data-text='1breadcrumbs 1.	1breadcrumb site induction and sign-in process must be used where required
+2.	workers must complete induction before attending site
+3.	attendance and compliance records to be checked
+4.	site manager to monitor daily sign-in
+5.	issues to be escalated to pm/om' data-roles='PM,SM,OM'><a href='items/46-1breadcrumbs.html'><strong>1Breadcrumbs</strong><div class='badges'><span class='badge on' data-role='PM'>PM</span><span class='badge on' data-role='SM'>SM</span><span class='badge on' data-role='OM'>OM</span><span class='badge ' data-role='Tendering'>Tendering</span><span class='badge ' data-role='Design'>Design</span><span class='badge ' data-role='CA'>CA</span><span class='badge ' data-role='HOC'>HOC</span><span class='badge ' data-role='Accounts'>Accounts</span></div></a></li>
         </ul>
-      
-        <div id="emptyState" class="empty" style="display:none">
-          No items match your search / filters.
-        </div>
       </section>
     </div>
 
-    <div class="small" style="margin-top:14px">Generated 21 May 2026</div>
+    <div class="footer-note">Tip: use role filters for responsibility views, then open any item for full details.</div>
   </div>
 
 <script>
-  const q = document.getElementById('q');
-  const list = document.getElementById('list');
-  const checks = [...document.querySelectorAll('#filters input[type=checkbox]')];
-
+(function(){
+  const q=document.getElementById('q'), boxes=[...document.querySelectorAll('#filters input')], items=[...document.querySelectorAll('#list li')];
   function apply(){
-    const term = q.value.trim().toLowerCase();
-    const selected = checks.filter(c=>c.checked).map(c=>c.value);
-
-    [...list.querySelectorAll('li')].forEach(li=>{
-      const text = li.dataset.text || '';
-      const roles = (li.dataset.roles||'').split(',').filter(Boolean);
-      const matchText = !term || text.includes(term);
-      const matchRoles = selected.every(r => roles.includes(r));
-      li.style.display = (matchText && matchRoles) ? '' : 'none';
+    const term=(q.value||'').toLowerCase().trim();
+    const roles=boxes.filter(b=>b.checked).map(b=>b.value);
+    items.forEach(li=>{
+      const text=li.dataset.text||'', r=(li.dataset.roles||'').split(',');
+      const okText=!term || text.includes(term);
+      const okRoles=roles.length===0 || roles.every(x=>r.includes(x));
+      li.style.display=(okText&&okRoles)?'':'none';
     });
   }
-
-  q.addEventListener('input', apply);
-  checks.forEach(c=>c.addEventListener('change', apply));
-
-  let deferredPrompt=null;
-  window.addEventListener('beforeinstallprompt', (e)=>{
-    e.preventDefault();
-    deferredPrompt=e;
-    const btn=document.createElement('button');
-    btn.textContent='Install App';
-    btn.className='btn';
-    btn.style.cssText='position:fixed;left:20px;bottom:20px;z-index:9999;';
-    btn.onclick=async()=>{
-      if(!deferredPrompt) return;
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      deferredPrompt=null;
-      btn.remove();
-    };
-    document.body.appendChild(btn);
-  });
-
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', ()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-  }
+  q.addEventListener('input',apply); boxes.forEach(b=>b.addEventListener('change',apply));
+})();
 </script>
 
 <script>
 (function(){
   const list = document.getElementById('list');
-  const emptyState = document.getElementById('emptyState');
+  if(!list) return;
+  const empty = document.createElement('div');
+  empty.className = 'empty';
+  empty.id = 'emptyState';
+  empty.textContent = 'No tasks match the current search/filter. Try clearing the search or removing one role filter.';
+  empty.style.display = 'none';
+  list.insertAdjacentElement('afterend', empty);
   const count = document.getElementById('count');
   function refreshMeta(){
     if(!list) return;
@@ -792,6 +561,14 @@ o	project kicking off
   }, true);
 })();
 </script>
+
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <a href="./index.html">Home</a>
+  <a href="#dashGrid">Roles</a>
+  <a href="#q">Search</a>
+  <a href="#visualGuides">Guides</a>
+  <a href="./reference-library.html">Refs</a>
+</nav>
 
 <script>
 (function(){
@@ -817,6 +594,86 @@ o	project kicking off
     if(!btn) return;
     setOnlyRole(btn.dataset.role);
   });
+})();
+</script>
+<script>
+(function(){
+  const GUIDE_TASKS = new Set([
+    'items/02-create-a-job-on-procore.html',
+    'items/06-initiate-kick-off-checklistpm.html',
+    'items/21-invoice-review.html',
+    'items/23-purchase-order-letting.html',
+    'items/25-drawing-upload.html'
+  ]);
+  const REF_TASKS = new Set([
+    'items/01-issue-a-job-number.html','items/03-initiate-design-checklist.html','items/04-initiate-tendering-checklist.html',
+    'items/05-initiate-sales-checklist.html','items/07-initiate-kick-off-checklistsm.html','items/08-cross-referencing-scope-of-works-with-drawing.html',
+    'items/09-trade-comparison.html','items/10-procurement-schedule.html','items/11-dilapidation-report.html',
+    'items/12-services-design-management-and-coordination-with-architectinterior-designer.html','items/13-structural-design-management-and-coordination-with-architectinterior-designer.html',
+    'items/14-contract-negotiation.html','items/15-project-management-plan.html','items/16-whs-management-plan.html',
+    'items/18-programtrade-program.html','items/19-cash-flow.html','items/20-progress-claim.html','items/22-contract-letting.html',
+    'items/24-submittal-management.html','items/26-document-upload.html','items/27-weekly-report.html','items/28-meeting-minutes.html',
+    'items/29-site-safety-audit.html','items/30-delivery-team-post-handover-checklist.html','items/31-site-manager-weekly-checklist.html',
+    'items/35-monthly-report.html','items/36-project-closure.html','items/37-defect-inspection-and-defect-management.html',
+    'items/38-change-event.html','items/39-client-variation.html','items/40-subcontractor-variation.html','items/41-organizing-pcg-invitation.html',
+    'items/42-rfi-management.html','items/43-fortnightly-construction-meeting.html','items/44-lesson-learnt.html','items/45-operation-manager-report.html','items/46-1breadcrumbs.html'
+  ]);
+
+  document.querySelectorAll('#list li a').forEach(a => {
+    const href = a.getAttribute('href');
+    const badges = a.querySelector('.badges');
+    if(!badges) return;
+    const feature = document.createElement('div');
+    feature.className = 'feature-badges';
+    if(GUIDE_TASKS.has(href)){
+      feature.innerHTML = '<span class="feature-badge guide">Visual Guide</span><span class="feature-badge ready">Training Ready</span>';
+    } else if(REF_TASKS.has(href)){
+      feature.innerHTML = '<span class="feature-badge ref">Reference Links</span><span class="feature-badge pending">Needs Screenshots</span>';
+    } else {
+      feature.innerHTML = '<span class="feature-badge pending">Needs Review</span>';
+    }
+    badges.insertAdjacentElement('afterend', feature);
+  });
+
+  const filterBox = document.getElementById('filters');
+  const roleSelect = document.getElementById('myRoleSelect');
+  const applyBtn = document.getElementById('applyMyRole');
+  const clearBtn = document.getElementById('clearMyRole');
+  const q = document.getElementById('q');
+
+  function applyRole(role, scroll){
+    if(!filterBox) return;
+    const cbs = Array.from(filterBox.querySelectorAll('input[type=checkbox]'));
+    cbs.forEach(cb => cb.checked = role ? (cb.value === role) : false);
+    if(q) q.value = '';
+    cbs.forEach(cb => cb.dispatchEvent(new Event('change', {bubbles:true})));
+    if(q) q.dispatchEvent(new Event('input', {bubbles:true}));
+    document.querySelectorAll('.dash-tile').forEach(t => t.classList.toggle('active', role && t.dataset.role === role));
+    if(scroll){
+      const itemsHead = document.querySelector('.items-head') || document.querySelector('#list');
+      if(itemsHead) itemsHead.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  const savedRole = localStorage.getItem('inone_rr_my_role') || '';
+  if(roleSelect && savedRole){
+    roleSelect.value = savedRole;
+    applyRole(savedRole, false);
+  }
+  if(applyBtn && roleSelect){
+    applyBtn.addEventListener('click', () => {
+      const role = roleSelect.value;
+      if(role) localStorage.setItem('inone_rr_my_role', role);
+      applyRole(role, true);
+    });
+  }
+  if(clearBtn && roleSelect){
+    clearBtn.addEventListener('click', () => {
+      localStorage.removeItem('inone_rr_my_role');
+      roleSelect.value = '';
+      applyRole('', false);
+    });
+  }
 })();
 </script>
 </body>
