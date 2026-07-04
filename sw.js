@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rr-app-v2';
+const CACHE_NAME = 'rr-app-v5';
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
